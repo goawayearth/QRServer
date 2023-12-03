@@ -54,8 +54,8 @@ public class CourierDAO {
             pstmt = (PreparedStatement)connection.prepareStatement(sql);
             pstmt.setString(1,courier_id);
             pstmt.setString(2,name);
-            pstmt.setString(3,mobile);
-            pstmt.setString(4,password);
+            pstmt.setString(3,password);
+            pstmt.setString(4,mobile);
             pstmt.executeUpdate();
         }
         catch (SQLException e){
