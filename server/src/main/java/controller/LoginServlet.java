@@ -22,6 +22,7 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
         String result = LoginService.userLogin(id,password);
         //将结果返回给客户端
+        System.out.println(result);
         out.write(result);
     }
 }

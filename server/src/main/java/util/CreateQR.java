@@ -23,7 +23,10 @@ public class CreateQR {
         QRCodeWriter qrCodeWriter = new QRCodeWriter();
 
         BitMatrix bitMatrix = qrCodeWriter.encode(text, BarcodeFormat.QR_CODE,100,100);
-        Path path = FileSystems.getDefault().getPath("D:\\STUDY\\1Android\\QR\\server\\src\\main\\resources\\"+filePath);
+        /*
+        下载到web根目录可以直接访问
+         */
+        Path path = FileSystems.getDefault().getPath("D:\\STUDY\\1Android\\QRA\\QR\\server\\src\\main\\webapp\\"+filePath);
         MatrixToImageWriter.writeToPath(bitMatrix,"PNG",path);
     }
 

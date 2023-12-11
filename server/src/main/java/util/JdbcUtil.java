@@ -13,7 +13,7 @@ public class JdbcUtil {
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/qrcode?" +
                     "characterEncoding=UTF-8" +
                     "&serverTimezone=Asia/Shanghai&useSSL=false" +
-                    "&allowPublicKeyRetrieval=true","root", "910513qlovet");
+                    "&allowPublicKeyRetrieval=true","root", "root");
             System.out.println("database access success");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
