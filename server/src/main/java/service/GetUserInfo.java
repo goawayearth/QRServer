@@ -9,7 +9,7 @@ public class GetUserInfo {
 
     public static Courier getInfo(String id){
         Courier courier = new CourierDAO().check_id(id);
-        courier.setPassword(""+DeliveryDAO.getDelivery_uid(id).size());
+        courier.setNum(DeliveryDAO.getDelivery_uid(id).size());
         return courier;
     }
 }
